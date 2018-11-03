@@ -1,0 +1,45 @@
+{
+  "name": "@serafinomb/react-scroll-direction",
+  "version": "1.0.0",
+  "description": "React high order component (HOC) to respond to scroll direction changes",
+  "author": {
+    "name": "Serafino Messina",
+    "email": "messina.serafino@gmail.com",
+    "url": "serafinomessina.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serafinomb/react-scroll-direction/issues"
+  },
+  "homepage": "https://github.com/serafinomb/react-scroll-direction#readme",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "serafinomb/react-scroll-direction",
+  "keywords": [
+    "react",
+    "hoc",
+    "scroll",
+    "direction",
+    "change"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "hoist-non-react-statics": "^3.2.1"
+  }
+}
