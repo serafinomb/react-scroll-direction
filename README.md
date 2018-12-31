@@ -62,12 +62,16 @@ export default withScrollDirection(App, HEADER_HEIGHT_PX);
 A demo can be found at `/example`.
 
 To run it locally, clone the repository and run the following commands:
+* `npm install`
+* `npm run build`
 * `npm pack`
 * `cd example`
 * `npm install`
 * `npm run start`
 
 or with docker:
+* `npm install`
+* `npm run build`
 * `npm pack`
 * `docker run -it --rm -v $(pwd):/ws:delegated -w /ws/example serafinomb/node npm install`
 * `cd example`
