@@ -2,14 +2,17 @@
 Easily detect scroll direction changes. Useful to hide sticky elements when
 scrolling down.
 
+### Installation
+`npm install @serafinomb/react-scroll-direction`
+
 ### Usage
 ```javascript
 withScrollDirection(Component[, offsetThreshold = 0])
 ```
 
-* *Component* Your React component
-* *offsetThreshold* Integer value. While the scroll amount (pixels from the top
-  of the document) is below or equal the *offsetThreshold*, `scrollDirection` is
+* **Component** Your React component
+* **offsetThreshold** Integer value. While the scroll amount (pixels from the top
+  of the document) is below or equal to `offsetThreshold`, `scrollDirection` is
   going to be `null`.
 
 ### Example
@@ -20,7 +23,7 @@ import withScrollDirection, {
 
 const HEADER_HEIGHT_PX = 200;
 
-// 4. We set the height to be equal to the offsetThreshold and use the
+// 4. Set the height to be equal to the offsetThreshold and use the
 //    scrollDirection value to hide/show our Header.
 function headerStyle(scrollDirection) {
   return {
@@ -29,20 +32,20 @@ function headerStyle(scrollDirection) {
   };
 }
 
-// 3. With scrollDirection we generate the Header styles
+// 3. With scrollDirection generate the Header styles
 const Header = ({ scrollDirection, ...props }) => (
   <div style={headerStyle(scrollDirection)} {...props}>
     My website header
   </div>
 );
 
-// 2. We pass down the scrollDirection property to our Header component
+// 2. Pass down the scrollDirection property to our Header component
 const App = props => (
   <Header scrollDirection={props.scrollDirection} />
   ...
 )
 
-// 1. We pass out component to the withScrollDirection HOC and specify an
+// 1. Pass out component to the withScrollDirection HOC and specify an
 //    offsetThreshold
 export default withScrollDirection(App, HEADER_HEIGHT_PX);
 ```
@@ -56,7 +59,7 @@ export default withScrollDirection(App, HEADER_HEIGHT_PX);
   `offsetThreshold`);
 
 ### Demo
-A demo can be found in `/example`.
+A demo can be found at `/example`.
 
 To run it locally, clone the repository and run the following commands:
 * `cd example`
