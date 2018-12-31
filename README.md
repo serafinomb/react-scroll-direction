@@ -10,7 +10,7 @@ scrolling down.
 withScrollDirection(Component[, offsetThreshold = 0])
 ```
 
-* **Component** Your React component
+* **Component** Your React component;
 * **offsetThreshold** Integer value. While the scroll amount (pixels from the top
   of the document) is below or equal to `offsetThreshold`, `scrollDirection` is
   going to be `null`.
@@ -45,7 +45,7 @@ const App = props => (
   ...
 )
 
-// 1. Pass out component to the withScrollDirection HOC and specify an
+// 1. Pass the component to the withScrollDirection HOC and specify an
 //    offsetThreshold
 export default withScrollDirection(App, HEADER_HEIGHT_PX);
 ```
@@ -53,9 +53,9 @@ export default withScrollDirection(App, HEADER_HEIGHT_PX);
 ### 
 `scrollDirection` can assume the following values:
 * `null` when the scroll amount is less than or equal to `offsetThreshold`.
-* SCROLL_DIRECTION_DOWN: When scrolling down (and the scroll amount is greater
+* SCROLL_DIRECTION_DOWN when scrolling down (and the scroll amount is greater
   than `offsetThreshold`);
-* SCROLL_DIRECTION_UP: When scrolling up (and the scroll amount is greater than
+* SCROLL_DIRECTION_UP when scrolling up (and the scroll amount is greater than
   `offsetThreshold`);
 
 ### Demo
