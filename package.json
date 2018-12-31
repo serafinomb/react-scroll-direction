@@ -1,6 +1,6 @@
 {
   "name": "@serafinomb/react-scroll-direction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React high order component (HOC) to respond to scroll direction changes",
   "author": {
     "name": "Serafino Messina",
