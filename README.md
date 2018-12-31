@@ -19,7 +19,7 @@ withScrollDirection(Component[, offsetThreshold = 0])
 ```javascript
 import withScrollDirection, {
   SCROLL_DIRECTION_DOWN,
-} from '@serafinomb/with-scroll-direction';
+} from '@serafinomb/react-scroll-direction';
 
 const HEADER_HEIGHT_PX = 200;
 
