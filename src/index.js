@@ -13,7 +13,7 @@ const THROTTLE_WAIT = 150;
  * @param {number} offsetThreshold
  * @param {number} lastScrollY
  * @param {SCROLL_DIRECTION_DOWN|SCROLL_DIRECTION_UP|null} currentScrollDirection
- * @returns {*}
+ * @returns {SCROLL_DIRECTION_DOWN|SCROLL_DIRECTION_UP|null}
  */
 function getScrollDirection(scrollY, offsetThreshold, lastScrollY, currentScrollDirection) {
   if (scrollY <= offsetThreshold) {
