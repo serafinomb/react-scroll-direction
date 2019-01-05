@@ -55,15 +55,17 @@ export default function withScrollDirection(WrappedComponent, offsetThreshold = 
     }
 
     _onWindowScrollCallback() {
+      const scrollY = window.pageYOffset;
+      
       const nextScrollDirection = getScrollDirection(
-        window.pageYOffset, offsetThreshold, this.lastScrollY, this.state.scrollDirection
+        scrollY, offsetThreshold, this.lastScrollY, this.state.scrollDirection
       );
 
       if (this.state.scrollDirection !== nextScrollDirection) {
         this.setState({ scrollDirection: nextScrollDirection });
       }
 
-      this.lastScrollY = window.scrollY;
+      this.lastScrollY = scrollY;
     };
 
     componentDidMount() {
